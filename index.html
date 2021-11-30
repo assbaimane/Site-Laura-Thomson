@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="Home">
         <nav class="navbar navbar-expand-lg navbar-expand-md navbar-dark bg-none">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#Banner">HOME</a>
+                        <a class="nav-link" href="#Home">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#About">ABOUT</a>
@@ -55,10 +55,11 @@
         <div id="Banner" class="banner text-light text-center p-2 p-md-8 p-lg-13">
             <h1>Laura Thomson</h1>
             <p class="text-uppercase">I'm a professional photographer in new york city</p>
+            <i class="fa fa-chevron-down opacity-50"><a href="#Footer"></a></i>
         </div>
     </header>
 
-    <section id="About" class="p-5">
+    <section id="About" class="p-5 container">
         <div class="row text-center">
             <h2 class="text-uppercase fs-5">About me</h2>
             <h4 class="text-uppercase fs-6 fw-bold mt-n4">About me</h4>
@@ -73,8 +74,8 @@
                     <div class="col-6">
                         <p><i class="fas fa-angle-right text-warning"></i><strong> Name:</strong> Laura Thomson</p>
                         <p><i class="fas fa-angle-right text-warning"></i><strong> Website:</strong> www.example.com</p>
-                        <p><i class="fas fa-angle-right text-warning"></i><strong> Phone:</strong> +123 456 7890</p>
-                        <p><i class="fas fa-angle-right text-warning"></i><strong> City:</strong> New York, USA</p>
+                        <p><i class="fas fa-angle-right text-warning"></i><strong> Phone:</strong> (123) 456 7890</p>
+                        <p><i class="fas fa-angle-right text-warning"></i><strong> City:</strong> New York, NY</p>
                     </div>
                     <div class="col-6">
                         <p><i class="fas fa-angle-right text-warning"></i><strong> Age:</strong> 30</p>
@@ -140,11 +141,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <section id="Services" class="p-5">
+    <section id="Services" class="p-5 container">
         <div class="row text-center">
             <h2 class="text-uppercase fs-5">Mes services</h2>
             <h4 class="text-uppercase fs-6 fw-bold mt-n4">Mes services</h4>
@@ -186,7 +186,7 @@
         </div>
     </section>
 
-    <section id="Contact" class="p-5">
+    <section id="Contact" class="p-5 container">
         <div class="row text-center">
             <h2 class="text-uppercase fs-5">Contact me</h2>
             <h4 class="text-uppercase fs-6 fw-bold mt-n4">Contact me</h4>
@@ -228,7 +228,7 @@
                             <div class="card-body">
                                 <div><i class="fas fa-phone-volume text-warning"></i></div>
                                 <h5 class="card-title">Call Me</h5>
-                                <p class="card-text">+123 456 789
+                                <p class="card-text">(123) 456 789
                             </div>
                         </div>
                     </div>
@@ -264,10 +264,23 @@
         </div>
     </section>
 
-    <footer>
-
+    <footer id="Footer" class="p-7 text-center">
+        <div class="row">
+            <h2>Laura Thomson</h2>
+            <h9 class="opacity-70"><em>Et aum quis fugo ipsa nahil. Labore corporis magnieligendi fuga maxime saepe commodi placeat.</em></h9>
+            <p class="card-text pt-4 pb-3">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-skype"></i>
+                <i class="fab fa-linkedin"></i>
+            </p>
+            <p>© Copyright <b>Laura</b>. All rights Reserved<br>Design by <span class="text-warning">BootstrapMade</span></p>
+        </div>
+        <div class="arrowup">
+            <i class="fa fa-arrow-up"><a href="#Home"></a></i>
+        </div>
     </footer>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
-
 </html>
