@@ -23830,4 +23830,17 @@ section h2, section .h2 {
   height: 100%;
 }
 
+#Services .card {
+  border: none;
+  box-shadow: 0 0 2px 5px #00000005;
+}
+#Services .card div i {
+  border-radius: 50%;
+  background-color: #fff4df;
+  padding: 5px;
+}
+#Services .card p {
+  color: grey;
+}
+
 /*# sourceMappingURL=style.css.map */
