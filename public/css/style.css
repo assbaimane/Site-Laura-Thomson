@@ -23823,6 +23823,7 @@ header {
 section h2, section .h2 {
   color: lightgrey;
   opacity: 0.5;
+  z-index: -1;
 }
 
 #About img {
@@ -23830,17 +23831,27 @@ section h2, section .h2 {
   height: 100%;
 }
 
-#Services .card {
+#Services .card, #Contact .card {
   border: none;
   box-shadow: 0 0 2px 5px #00000005;
 }
-#Services .card div i {
+#Services .card div i, #Contact .card div i {
   border-radius: 50%;
   background-color: #fff4df;
   padding: 5px;
 }
-#Services .card p {
+#Services .card p, #Contact .card p {
   color: grey;
+}
+
+#Contact h5, #Contact .h5 {
+  color: grey;
+}
+#Contact p i.fab {
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid grey;
+  padding: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
