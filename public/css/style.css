@@ -6785,7 +6785,7 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 0rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
@@ -23818,26 +23818,29 @@ html, body {
 }
 html img, body img {
   width: 100%;
+  height: 100%;
 }
 html .row, body .row {
   margin: 0px;
 }
 html p, body p {
-  font-size: x-small;
+  font-size: small;
 }
 html h1, html .h1, body h1, body .h1 {
   font-family: "Satisfy";
+}
+html a, body a {
+  color: white;
+}
+html a:hover, body a:hover {
+  color: #ffb727 !important;
 }
 
 header {
   background: linear-gradient(#00000099, #00000099), url("../img/hero-bg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 100%;
   height: 50vw;
-}
-header a:hover {
-  color: #ffb727 !important;
 }
 
 section h2, section .h2 {
@@ -23847,13 +23850,15 @@ section h2, section .h2 {
 }
 
 #About img {
-  width: 100%;
   height: 100%;
 }
 
+#Services, #Contact {
+  grid-gap: 10px;
+}
 #Services .card, #Contact .card {
   border: none;
-  box-shadow: 0 0 2px 5px #00000005;
+  box-shadow: 0 0 5px 5px #00000005;
 }
 #Services .card div i, #Contact .card div i {
   border-radius: 50%;
@@ -23879,8 +23884,9 @@ footer {
   background: linear-gradient(#00000099, #00000099), url("../img/footer-bg.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 25vw;
+}
+footer h2, footer .h2 {
+  font-family: "Satisfy";
 }
 footer p i.fab {
   background-color: #ffb727;
@@ -23891,8 +23897,9 @@ footer .opacity-70 {
   opacity: 70%;
 }
 footer .arrowup {
-  top: 0px;
-  right: 5px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
 }
 footer .arrowup i {
   background-color: #ffb727;
